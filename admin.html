@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+<div class="container">
+    <div class="topbar">
+    <div class="logo">
+        <h2>Light Control Panel</h2>
+        </div>
+    <div class="search">
+        <input type="text" id="search" placeholder="search here">
+        <label for="search"></label>
+</div>
+        </div>
+
+        <div class="user"></div>
+
+<div class="sidebar">
+    <ul>
+        <li>
+            <a href="#">
+                <div> <b style="color:white">Main Page</b> </div>
+            </a>
+                </li>
+
+        <li>
+            <a href="#">
+                <div> <b style="color:white">Settings</b></div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><b style="color:white">Login</b></div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div> <b style="color:white">Sign Out</b></div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="main">
+    <div class="weather">
+    <header><i class='weather'></i>Weather Condition</header>
+    <section class="input-part">
+
+
+        <section class="block" style="background-color: #f5f6f7;">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-md-10 col-lg-8 col-xl-6">
+
+                        <div class="card-img" >
+                            <div class="snow-image" style="border-width:30px">
+                                <img src="sunny.jpg"
+                                     class="card-img" alt="weather" width="350px" height="200px" />
+                                <div class="mask" style="background-color: rgba(190, 216, 232, .5);"></div>
+                            </div>
+                            <div class="card-img-overlay text-dark p-5">
+                                <h4 class="mb-0">Antalya,Turkey</h4>
+                                <p class="display-2 my-3">Day</p>
+                                <p class="mb-2">Feels Like: <strong>30°C</strong></p>
+                                <h5>Sunny</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="separator"></div>
+        <button>Get Device Location</button>
+    </section>
+    </div>
+</div>
+
+    <div class="room">
+    <header><i class='rooms'></i>Room Condition</header>
+    <section class="input-part">
+
+
+        <section class="block" style="background-color: #f5f6f7;">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-md-10 col-lg-8 col-xl-6">
+
+                        <div class="card-img" >
+                            <div class="image" style="border-width:30px">
+                                <img src="indir.jpg"
+                                     class="card-img" alt="weather" width="350px" height="200px" />
+                                <div class="mask" style="background-color: rgba(190, 216, 232, .5);"></div>
+                            </div>
+                            <div class="card-img-overlay text-dark p-5">
+                                <h4 class="mb-0">Living Room</h4>
+                                <p class="display-2 my-3">Morning</p>
+                                <p class="mb-2"><label for="roomss">Choose a room:</label>
+
+                                    <select id="roomss">
+                                        <option value="living" selected>Living Room</option>
+                                        <option value="kitchen">Kitchen</option>
+                                        <option value="bath">Bathroom</option>
+                                        <option value="Bed" >Bedroom</option>
+                                    </select>
+                                </p>
+                                <h4>Light Color:<b style="color:#8f00ff;"> Purple</b></h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="separator"></div>
+        <button>Get Light Setting</button>
+    </section>
+    </div>
+
+</div>
+</body>
+</html>

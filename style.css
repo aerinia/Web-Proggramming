@@ -1,0 +1,270 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+.topbar{
+position: fixed;
+background: #4f69c6;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.008);
+width: 100%;
+height:100px;
+padding: 0 20px;
+display:grid;
+grid-template-columns: 2fr 10fr 0.4fr 1fr;
+align-items: center;
+z-index: 1;
+}
+
+.user{
+position: relative;
+width:50px;
+height: 50px;
+}
+
+.logo h2{
+color: #ffffff;
+}
+
+.search{
+position:relative;
+width:60%;
+justify-self:center;
+}
+
+.search input{
+width:100%;
+height: 40px;
+padding: 0 40px;
+font-size: 14px;
+outline:none;
+border:none;
+border-radius: 10px;
+background: #f5f5f5;}
+
+.sidebar{
+position:fixed;
+top:60px;
+width: 260px;
+height:100%;
+background:#042483
+}
+
+.sidebar ul {
+margin-top:50px;
+
+}
+
+.sidebar ul li{
+width:100%;
+text-decoration:none;
+height:60px;
+display:flex;
+align-items:center;
+
+
+}
+
+
+.main{
+float:left;
+padding-left:250px;
+padding-top:100px;
+  justify-content: center;
+  width: auto;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+.main header{
+display:flex;
+justify-content:center;
+  font-size: 21px;
+  font-weight: 500;
+  color: #43AFFC;
+  padding: 16px 15px;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+header i{
+  font-size: 0em;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.main.active header i{
+  margin-left: 5px;
+  font-size: 30px;
+}
+.main .input-part{
+  margin: 20px 25px 30px;
+}
+.main.active .input-part{
+  display: none;
+}
+.input-part .info-txt{
+  display: none;
+  font-size: 17px;
+  text-align: center;
+  padding: 12px 10px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+.input-part .info-txt.error{
+  color: #721c24;
+  display: block;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+.input-part .info-txt.pending{
+  color: #0c5460;
+  display: block;
+  background: #d1ecf1;
+  border: 1px solid #bee5eb;
+}
+.input-part :where(input, button){
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 7px;
+}
+.input-part input{
+  text-align: center;
+  padding: 0 15px;
+  border: 1px solid #ccc;
+}
+.input-part input:is(:focus, :valid){
+  border: 2px solid #43AFFC;
+}
+.input-part input::placeholder{
+  color: #bfbfbf;
+}
+.input-part .separator{
+  height: 1px;
+  width: 100%;
+  margin: 25px 0;
+  background: #ccc;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.separator::before{
+  color: #b3b3b3;
+  font-size: 19px;
+  padding: 0 15px;
+  background: #fff;
+}
+.input-part button{
+  color: #fff;
+  cursor: pointer;
+  background: #43AFFC;
+  transition: 0.3s ease;
+}
+.input-part button:hover{
+  background: #1d9ffc;
+}
+.room{
+float:right;
+padding-right:50px;
+padding-top:100px;
+justify-content: center;
+  width: auto;
+  background-color: #ffffff;
+  border-radius: 7px;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+.room header{
+display:flex;
+justify-content:center;
+  font-size: 21px;
+  font-weight: 500;
+  color: #43AFFC;
+  padding: 16px 15px;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+header i{
+  font-size: 0em;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.room.active header i{
+  margin-left: 5px;
+  font-size: 30px;
+}
+.room .input-part{
+  margin: 20px 25px 30px;
+}
+.room.active .input-part{
+  display: none;
+}
+.input-part .info-txt{
+  display: none;
+  font-size: 17px;
+  text-align: center;
+  padding: 12px 10px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+.input-part .info-txt.error{
+  color: #721c24;
+  display: block;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+.input-part .info-txt.pending{
+  color: #0c5460;
+  display: block;
+  background: #d1ecf1;
+  border: 1px solid #bee5eb;
+}
+.input-part :where(input, button){
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 7px;
+}
+.input-part input{
+  text-align: center;
+  padding: 0 15px;
+  border: 1px solid #ccc;
+}
+.input-part input:is(:focus, :valid){
+  border: 2px solid #43AFFC;
+}
+.input-part input::placeholder{
+  color: #bfbfbf;
+}
+.input-part .separator{
+  height: 1px;
+  width: 100%;
+  margin: 25px 0;
+  background: #ccc;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.separator::before{
+  color: #b3b3b3;
+  font-size: 19px;
+  padding: 0 15px;
+  background: #fff;
+}
+.input-part button{
+  color: #fff;
+  cursor: pointer;
+  background: #43AFFC;
+  transition: 0.3s ease;
+}
+.input-part button:hover{
+  background: #1d9ffc;
+}

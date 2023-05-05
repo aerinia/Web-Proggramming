@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="settings.css">
+    <title>Settings</title>
+</head>
+
+<body>
+<div class="topbar">
+    <div class="logo">
+        <h2>Light Control Panel</h2>
+    </div>
+    <div class="search">
+        <input type="text" id="search" placeholder="search here">
+        <label for="search"></label>
+    </div>
+</div>
+
+<div class="user"></div>
+
+<div class="sidebar">
+    <ul>
+        <li>
+            <a href="#">
+                <div> <b style="color:white">Main Page</b> </div>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <div> <b style="color:white">Settings</b></div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><b style="color:white">Login</b></div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div> <b style="color:white">Sign Out</b></div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="wrapper">
+    <h3 class="title">Account settings</h3>
+    <div class="d-flex align-items-start py-3 border-bottom">
+        <img src="user.jpg"
+             class="img" alt=""/>
+        <div class="pl-sm-4 pl-2" id="img-section">
+            <b style="color:#1338be">Profile Photo </b>
+            <p> </p>
+            <button class="btn button border"><b>Upload</b></button>
+        </div>
+    </div>
+    <div class="py-2">
+        <div class="row py-2">
+            <div class="col-md-6">
+                <label class="firstname">First Name</label>
+                <input type="text" class="bg-light form-control" placeholder="Steve">
+            </div>
+            <div class="col-md-6 pt-md-0 pt-3">
+                <label class="lastname">Last Name</label>
+                <input type="text" class="bg-light form-control" placeholder="Smith">
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="light">
+                <label class="light">Light Settings</label>
+                <select name="light" id="light" class="bg-light">
+                    <option value="auto" selected>Auto</option>
+                    <option value="manuel">Manuel</option>
+
+                </select>
+            </div>
+            <div class="addroom">
+                <label class="addroom">Add Room</label>
+                <input type="text" class="addroom" placeholder="Enter room name">
+            </div>
+            <div class="loc">
+                <label class="loc">Location</label>
+                <input type="tel" class="bg-light form-control" placeholder="Antalya -----">
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col-md-6">
+                <label for="country">Country</label>
+                <select name="country" id="country" class="bg-light">
+                    <option value="tr" selected>Turkish</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="spanish">Spanish</option>
+                </select>
+            </div>
+            <div class="col-md-6 pt-md-0 pt-3" id="lang">
+                <label for="language">Language</label>
+                <div class="arrow">
+                    <select name="language" id="language" class="bg-light">
+                        <option value="english" selected>English</option>
+                        <option value="english_us">English (United States)</option>
+                        <option value="enguk">English UK</option>
+                        <option value="tr">Turkish</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="py-3 pb-4 border-bottom">
+            <button class="btn btn-primary mr-3">Save Changes</button>
+            <button class="btn border button">Cancel</button>
+        </div>
+        <div class="d-sm-flex align-items-center pt-3" id="deactivate">
+            <div>
+                <b>Deactivate your account</b>
+
+            </div>
+            <div class="ml-auto">
+                <button class="btn danger">Deactivate</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
